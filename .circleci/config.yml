@@ -4,7 +4,7 @@ version: 2.1
 aliases:
   - &container_python
     docker:
-      - image: cimg/python:3.10.1  # primary container for the build job
+      - image: cimg/python:3.9.10  # primary container for the build job
 
   - &run_task_install_tox_dependencies
     run:
@@ -19,7 +19,7 @@ aliases:
       command: |
         curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | POETRY_UNINSTALL=1 python -
         curl -sSL https://install.python-poetry.org | python3 -
-        poetry env use 3.10.1
+        poetry env use 3.9.10
         poetry install
 jobs:
   testing:
