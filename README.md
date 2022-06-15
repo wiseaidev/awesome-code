@@ -5,6 +5,10 @@ All rights reserved.
  -->
 
 <div align="center">
+    <a href="https://circleci.com/gh/Harmouch101/awesome-code/tree/main">
+       <img src="https://circleci.com/gh/Harmouch101/awesome-code/tree/main.svg?style=svg"
+       alt="CircleCI"/>
+    </a>
     <a href="https://results.pre-commit.ci/latest/github/Harmouch101/awesome-code/main">
        <img src="https://results.pre-commit.ci/badge/github/Harmouch101/awesome-code/main.svg"
        alt="pre-commit.ci status"/>
