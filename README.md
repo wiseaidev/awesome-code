@@ -14,13 +14,13 @@ All rights reserved.
        alt="pre-commit.ci status"/>
     </a>
     <a href="https://github.com/Harmouch101/awesome-code">
-       <img src="https://img.shields.io/badge/open_source-%F0%9F%A4%8D-3DA639.svg?style=for-the-badge&logoColor=blue&color=black" alt="Open Source Love"/>
+       <img src="https://img.shields.io/badge/open_source-%F0%9F%A4%8D-3DA639.svg" alt="Open Source Love"/>
     </a>
     <a href="https://github.com/Harmouch101/awesome-code/blob/master/LICENSE">
-       <img src="https://img.shields.io/github/license/Harmouch101/awesome-code?style=for-the-badge&logoColor=blue&color=black" alt="License"/>
+       <img src="https://img.shields.io/github/license/Harmouch101/awesome-code" alt="License"/>
     </a>
     <a href="https://github.com/Harmouch101/awesome-code/">
-       <img src="https://img.shields.io/github/repo-size/Harmouch101/awesome-code?style=for-the-badge&logoColor=blue&color=black" alt="Repo Size"/>
+       <img src="https://img.shields.io/github/repo-size/Harmouch101/awesome-code" alt="Repo Size"/>
     </a>
 </div>
 
