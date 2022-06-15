@@ -43,7 +43,7 @@ This repository contains solutions to Leetcode problems. It will be updated regu
 Basic understanding of the core language. If you are new to python, I highly recommend checking out the free learning material I compiled in the [`awesome-python`](https://github.com/Harmouch101/awesome-python) repository.
 
 ```sh
-python -c "import this" | grep simple
+python -c "import this" | grep Simple
 ```
 
 ```sh
@@ -60,9 +60,9 @@ Simple is better than complex.
     * [Two Sum](#two-sum)
   * [Medium](#two-pointers-medium)
     * [Two Sum II](#two-sum-ii)
-* [Hash Map](#hash-table)
+* [Hash Table](#hash-table)
   * [Easy](#hash-table-easy)
-    * [Two Sum](#two-sum)
+    * [Two Sum](#hash-table-two-sum)
 
 ## [Two Pointers](https://leetcode.com/tag/two-pointers/) <a name="two-pointers"></a>
 
@@ -73,7 +73,7 @@ Simple is better than complex.
 | # | Problem Statement | Notes | Solutions | Time Complexity  | Space Complexity |
 | :---:| :---: | :---:  | :---:     |  :---:  | :---: |
 | 0 <a name="move-zeros"></a> | [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/) |  <ul><li>Use two consecutive pointers, the left one at the start of the list, the right one at start + 1.<br/>| [`move_zeros.py`](./solutions/two_pointers/move_zeros.py) | O(n). The right pointer does not visit the same element twice. | O(1). All operations are made in-place. |
-| 1 <a name="two-sum"></a> | [1. Two Sum](https://leetcode.com/problems/two_sum/) | <ul><li>Sort the array and store it into a tmp variable.</li><li>Use two pointers, the left one at the start of the list, the right one at the end of the list.</li><li>Use two pointers, the left one at the start of the list, the right one at the end of it.</li></ul>| [`two_sum.py`](./solutions/two_pointers/move_zeros.py) | O(n logn). because of [Timsort](https://en.wikipedia.org/wiki/Timsort) | O(1). All operations are made in-place. |
+| 1 <a name="two-sum"></a> | [1. Two Sum](https://leetcode.com/problems/two_sum/) | <ul><li>Sort the array and store it into a tmp variable.</li><li>Use two pointers, the left one at the start of the list, the right one at the end of the list.</li></ul>| [`two_sum.py`](./solutions/two_pointers/two_sum.py) | O(n logn). because of [Timsort](https://en.wikipedia.org/wiki/Timsort) | O(n). Because of the tmp List |
 
 #### 🔝 [Go To TOC](#TOC).
 
@@ -81,7 +81,7 @@ Simple is better than complex.
 
 | # | Problem Statement | Notes | Solutions | Time Complexity  | Space Complexity |
 | :---:| :---: | :---:  | :---:     |  :---:  | :---: |
-| 0 <a name="two-sum-ii"></a> | [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | <ul><li>The array is already sorted.</li><li>Use two pointers, the left one at the start of the list, the right one at the end of it.</li></ul>  | [`move_zeros.py`](./solutions/two_pointers/two_sum_two.py) | O(n). The right and left pointers do not visit the same element twice. | O(1). All operations are made in-place. |
+| 0 <a name="two-sum-ii"></a> | [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | <ul><li>The array is already sorted.</li><li>Use two pointers, the left one at the start of the list, the right one at the end of it.</li></ul>  | [`two_sum_two.py`](./solutions/two_pointers/two_sum_two.py) | O(n). The right and left pointers do not visit the same element twice. | O(1). All operations are made in-place. |
 
 ## [Hash Table](https://leetcode.com/tag/hash-table/) <a name="hash-table"></a>
 
@@ -91,7 +91,7 @@ Simple is better than complex.
 
 | # | Problem Statement | Notes | Solutions | Time Complexity  | Space Complexity |
 | :---:| :---: | :---:  | :---:     |  :---:  | :---: |
-| 0 <a name="two-sum"></a> | [1. Two Sum](https://leetcode.com/problems/two-sum/) | <ul><li>Create a hashmap which accepts integer datatype as key and value.</li><li>Check if difference (element visited - target) is present in the hashmap.</li><li>If present, return indexes as result.</li><li>Otherwise, add the current element as key and its value as the current iteration</li></ul> | [`two_sum.py`](./solutions/hash_table/two_sum.py) | O(n). One for loop, hashmap lookup ~ O(1) | O(n). Hash Table. |
+| 0 <a name="hash-table-two-sum"></a> | [1. Two Sum](https://leetcode.com/problems/two-sum/) | <ul><li>Create a hashmap which accepts integer datatype as key and value.</li><li>Check if difference (element visited - target) is present in the hashmap.</li><li>If present, return indexes as result.</li><li>Otherwise, add the current element as key and its value as the current iteration</li></ul> | [`two_sum.py`](./solutions/hash_table/two_sum.py) | O(n). One for loop, hashmap lookup ~ O(1) | O(n). Hash Table. |
 
 ## Contributing
 
