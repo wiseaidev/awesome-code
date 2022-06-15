@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, nums: list[int], target: int) -> list[int]:
+    def two_sum(self, nums: list[int], target: int) -> list[int]:
         assert 2 <= len(nums) <= 10**4
         for element in nums:
             assert -(10**9) <= element <= 10**9
