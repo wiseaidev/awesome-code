@@ -75,16 +75,93 @@ Simple is better than complex.
 
 ### Easy <a name="two-pointers-easy"></a>
 
-| # | Problem Statement | Notes | Solutions | Time Complexity  | Space Complexity |
-| :---:| :---: | :---:  | :---:     |  :---:  | :---: |
-| 283. <a name="move-zeros"></a> | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) |  <ul><li>Use two consecutive pointers, the left one at the start of the list, the right one at start + 1.</li></ul>| [`move`<br>`zeros`<br>`py`](./solutions/two_pointers/move_zeros.py) | O(n). The right pointer does not visit the same element twice. | O(1). All operations are made in-place. |
-| 1. <a name="two-sum"></a> | [Two Sum](https://leetcode.com/problems/two_sum/) | <ul><li>Sort the array and store it into a tmp variable.</li><li>Use two pointers, the left one at the start of the list, the right one at the end of the list.</li></ul>| [`two`<br>`sum`<br>`py`](./solutions/two_pointers/two_sum.py) | O(n logn). because of [Timsort](https://en.wikipedia.org/wiki/Timsort) | O(n). Because of the tmp List |
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">283. <a name="move-zeros"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/move-zeroes/" target="_blank">Move Zeroes</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Use two consecutive pointers, the left one at the start of the list, the right one at start + 1.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/two_pointers/move_zeros.py" target="_blank">
+          <code>move <br />zeros <br />py </code>
+        </a>
+      </td>
+      <td align="left">O(n). The right pointer does not visit the same element twice.</td>
+      <td align="left">O(1). All operations are made in-place.</td>
+    </tr>
+    <tr>
+      <td align="left">1. <a name="two-sum"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/two_sum/" target="_blank">Two Sum</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Sort the array and store it into a tmp variable.</li>
+          <li>Use two pointers, the left one at the start of the list, the right one at the end of the list.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/two_pointers/two_sum.py" target="_blank">
+          <code>two <br />sum <br />py </code>
+        </a>
+      </td>
+      <td align="left">O(n logn). because of <a href="https://en.wikipedia.org/wiki/Timsort" target="_blank">Timsort</a>
+      </td>
+      <td align="left">O(n). n is the length of the tmp List.</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Medium <a name="two-pointers-medium"></a>
 
-| # | Problem Statement | Notes | Solutions | Time Complexity  | Space Complexity |
-| :---:| :---: | :---:  | :---:     |  :---:  | :---: |
-| 167. <a name="two-sum-ii"></a> | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | <ul><li>The array is already sorted.</li><li>Use two pointers, the left one at the start of the list, the right one at the end of it.</li></ul>  | [`two`<br>`sum`<br>`two`<br>`py`](./solutions/two_pointers/two_sum_two.py) | O(n). The right and left pointers do not visit the same element twice. | O(1). All operations are made in-place. |
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">167. <a name="two-sum-ii"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/" target="_blank">Two Sum II - Input Array Is Sorted</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>The array is already sorted.</li>
+          <li>Use two pointers, the left one at the start of the list, the right one at the end of it.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/two_pointers/two_sum_two.py" target="_blank">
+          <code>two <br />sum <br />two <br />py </code>
+        </a>
+      </td>
+      <td align="left">O(n). The right and left pointers do not visit the same element twice.</td>
+      <td align="left">O(1). All operations are made in-place.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## [Hash Table](https://leetcode.com/tag/hash-table/) <a name="hash-table"></a>
 
@@ -92,15 +169,77 @@ Simple is better than complex.
 
 ### Easy <a name="hash-table-easy"></a>
 
-| # | Problem Statement | Notes | Solutions | Time Complexity  | Space Complexity |
-| :---:| :---: | :---:  | :---:     |  :---:  | :---: |
-| 1. <a name="hash-table-two-sum"></a> | [Two Sum](https://leetcode.com/problems/two-sum/) | <ul><li>Create a hashmap which accepts integer datatype as key and value.</li><li>Check if difference (element visited - target) is present in the hashmap.</li><li>If present, return indexes as result.</li><li>Otherwise, add the current element as key and its value as the current iteration</li></ul> | [`two`<br>`sum`<br>`py`](./solutions/hash_table/two_sum.py) | O(n). One for loop, hashmap lookup ~ O(1) | O(n). Hash Table. |
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">1. <a name="hash-table-two-sum"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/two-sum/" target="_blank">Two Sum</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Create a hashmap which accepts integer datatype as key and value.</li>
+          <li>Check if difference (element visited - target) is present in the hashmap.</li>
+          <li>If present, return indexes as result.</li>
+          <li>Otherwise, add the current element as key and its value as the current iteration</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/hash_table/two_sum.py" target="_blank">
+          <code>two <br />sum <br />py </code>
+        </a>
+      </td>
+      <td align="left">O(n). One for loop, hashmap lookup ~ O(1)</td>
+      <td align="left">O(n). Hash Table.</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Medium <a name="hash-table-medium"></a>
 
-| # | Problem Statement | Notes | Solutions | Time Complexity  | Space Complexity |
-| :---:| :---: | :---:  | :---:     |  :---:  | :---: |
-| 12. <a name="integer-to-roman"></a> | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | <ul><li>Store the numbers from largest to smallest into a hashmap, aka dict.</li><li>Keep dividing the given number by the numbers stored in the hashmap</li><li>The quotient of division denotes how many times the current roman number appears in the end result</li><li> Update the number by the reminder of the previous division.</li></ul> | [`integer`<br>`to`<br>`roman`<br>`py`](./solutions/hash_table/integer_to_roman.py) | O(k). k: length of the hash table. | O(n). n: length of the hash table + list. |
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">12. <a name="integer-to-roman"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/integer-to-roman/" target="_blank">Integer to Roman</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Store the numbers from largest to smallest into a hashmap, aka dict.</li>
+          <li>Keep dividing the given number by the numbers stored in the hashmap</li>
+          <li>The quotient of division denotes how many times the current roman number appears in the end result</li>
+          <li> Update the number by the reminder of the previous division.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/hash_table/integer_to_roman.py" target="_blank">
+          <code>integer <br />to <br />roman <br />py </code>
+        </a>
+      </td>
+      <td align="left">O(k). k: length of the hash table.</td>
+      <td align="left">O(n). n: length of the hash table + list.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## [Binary Tree](https://leetcode.com/tag/binary-tree) <a name="binary-tree"></a>
 
@@ -108,11 +247,80 @@ Simple is better than complex.
 
 ### Easy <a name="binary-tree-easy"></a>
 
-| # | Problem Statement | Notes | Solutions | Time Complexity  | Space Complexity |
-| :---:| :---: | :---:  | :---:     |  :---:  | :---: |
-| 144. <a name="preorder-traversal"></a> | [Recursive Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) |  <ul><li>Add the current node onto the list.</li><li>Traverse the left sub-tree, and keep adding the visited node.</li><li>If root is None, stop traverse, and move to the right sub-tree.</li></ul>| [`recursive`<br>`preorder`<br>`traversal`<br>`py`](./solutions/binary_tree/recursive_preorder_traversal.py) | O(n), n number of nodes | O(log n) ~ height of the tree. |
-| 144. <a name="preorder-traversal"></a> | [Iterative Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) |  <ul><li>Use a stack(LIFO).</li><li>Add the root node into a list.</li><li>Visit right, then left nodes, and push onto the stack.</li><li>Pop an element from the stack, add it into the list.</li><li>Repeat the previous two steps until the stack is empty.</li></ul>| [`iterative`<br>`preorder`<br>`traversal`<br>`py`](./solutions/binary_tree/iterative_preorder_traversal.py) | O(n), n number of nodes | O(log n) ~ height of the tree. |
-| 144. <a name="preorder-traversal"></a> | [Morris Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) |  <ul><li>Preorder traversal without recursion and or stack.</li><li>Push current.right rather than the current node. The None cases will handle themselves by the inner while loop.</li></ul>| [`morris`<br>`traversal`<br>`py`](./solutions/binary_tree/morris_traversal.py) | O(n), n number of nodes | O(1) |
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">144. <a name="preorder-traversal"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-tree-preorder-traversal/" target="_blank">Recursive Preorder Traversal</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Add the current node onto the list.</li>
+          <li>Traverse the left sub-tree, and keep adding the visited node.</li>
+          <li>If root is None, stop traverse, and move to the right sub-tree.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_preorder_traversal.py" target="_blank">
+          <code>recursive <br />preorder <br />traversal <br />py </code>
+        </a>
+      </td>
+      <td align="left">O(n), n number of nodes.</td>
+      <td align="left">O(log n) ~ height/depth of the tree.</td>
+    </tr>
+    <tr>
+      <td align="left">144.</td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-tree-preorder-traversal/" target="_blank">Iterative Preorder Traversal</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Use a stack(LIFO).</li>
+          <li>Add the root node into a list.</li>
+          <li>Visit right, then left nodes, and push onto the stack.</li>
+          <li>Pop an element from the stack, add it into the list.</li>
+          <li>Repeat the previous two steps until the stack is empty.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/iterative_preorder_traversal.py" target="_blank">
+          <code>iterative <br />preorder <br />traversal <br />py </code>
+        </a>
+      </td>
+      <td align="left">O(n), n number of nodes.</td>
+      <td align="left">O(log n) ~ height/depth of the tree.</td>
+    </tr>
+    <tr>
+      <td align="left">144.</td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-tree-preorder-traversal/" target="_blank">Morris Traversal</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Preorder traversal without recursion and or stack.</li>
+          <li>Push current.right rather than the current node. The None cases will handle themselves by the inner while loop.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/morris_traversal.py" target="_blank">
+          <code>morris <br />traversal <br />py </code>
+        </a>
+      </td>
+      <td align="left">O(n), n number of nodes.</td>
+      <td align="left">O(1).</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Contributing
 
