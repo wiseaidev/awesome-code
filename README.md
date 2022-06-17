@@ -327,7 +327,7 @@ Simple is better than complex.
       <td align="left">O(1).</td>
     </tr>
     <tr>
-      <td align="left">94. <a name="binary-tree-inorder-traversal"></td>
+      <td align="left">94. <a name="binary-tree-inorder-traversal"></a></td>
       <td align="left">
         <a href="https://leetcode.com/problems/binary-tree-inorder-traversal/" target="_blank">Iterative Inorder Traversal</a>
       </td>
@@ -374,7 +374,7 @@ Simple is better than complex.
       <td align="left">O(log n) ~ height/depth of the tree.</td>
     </tr>
     <tr>
-      <td align="left">145 <a name="binary-tree-postorder-traversal"></td>
+      <td align="left">145 <a name="binary-tree-postorder-traversal"></a></td>
       <td align="left">
         <a href="https://leetcode.com/problems/binary-tree-postorder-traversal/" target="_blank">Iterative Postorder Traversal</a>
       </td>
@@ -387,7 +387,7 @@ Simple is better than complex.
         Then pop from the stack which is called current.
         </li>
         <li>
-        Kepp calling push_all_left() on current's right child until stack is empty.
+        Keep calling push_all_left() on current's right child until stack is empty.
         </li>
         <li>
         Add current to result list.
@@ -425,7 +425,7 @@ Simple is better than complex.
       <td align="left">O(log n) ~ height/depth of the tree.</td>
     </tr>
     <tr>
-      <td align="left">637. <a name="average-of-levels-in-binary-tree"></td>
+      <td align="left">637. <a name="average-of-levels-in-binary-tree"></a></td>
       <td align="left">
         <a href="https://leetcode.com/problems/average-of-levels-in-binary-tree/" target="_blank">Iterative Average of Levels in Binary Tree</a>
       </td>
