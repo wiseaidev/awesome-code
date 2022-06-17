@@ -68,6 +68,13 @@ Simple is better than complex.
 * [Binary Tree](#binary-tree)
   * [Easy](#binary-tree-easy)
     * [Binary Tree Preorder Traversal](#preorder-traversal)
+    * [Binary Tree Inorder Traversal](#binary-tree-inorder-traversal)
+    * [Binary Tree Postorder Traversal](#binary-tree-postorder-traversal)
+    * [Average of Levels in Binary Tree](#average-of-levels-in-binary-tree)
+  * [Medium](#binary-tree-medium)
+    * [Binary Tree Level Order Traversal](#binary-tree-level-order-traversal)
+    * [Binary Tree Zigzag Level Order Traversal](#binary-tree-zigzag-level-order-traversal)
+    * [Populating Next Right Pointers in Each Node](#populating-next-right-pointers-in-each-node)
 
 ## [Two Pointers](https://leetcode.com/tag/two-pointers/) <a name="two-pointers"></a>
 
@@ -318,6 +325,235 @@ Simple is better than complex.
       </td>
       <td align="left">O(n), n number of nodes.</td>
       <td align="left">O(1).</td>
+    </tr>
+    <tr>
+      <td align="left">94. <a name="binary-tree-inorder-traversal"></td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-tree-inorder-traversal/" target="_blank">Iterative Inorder Traversal</a>
+      </td>
+      <td align="left">
+        <ul>
+        <li>
+        Push all the left children of root into the stack until there's no more nodes.
+        </li>
+        <li>
+        Then pop from the stack which is called current.
+        </li>
+        <li>
+        Add current to result list.
+        </li>
+        <li>
+        Kepp calling push_all_left() on current's right child until stack is empty.
+        </li></ul>
+        </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/iterative_inorder_traversal.py" target="_blank">
+          <code>iterative<br />inorder<br />traversal</code>
+        </a>
+      </td>
+      <td align="left">O(n), n number of nodes.</td>
+      <td align="left">O(n), n number of nodes.</td>
+    </tr>
+    <tr>
+      <td align="left">94.</td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-tree-inorder-traversal/" target="_blank">Recursive Inorder Traversal</a>
+      </td>
+      <td align="left">
+        <ul>
+        <li>
+        Keep visiting all the left nodes. Once finished, add the current node while visiting the right node.
+        </li></ul>
+        </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_inorder_traversal.py" target="_blank">
+          <code>recursive<br />inorder<br />traversal</code>
+        </a>
+      </td>
+      <td align="left">O(n), n number of nodes.</td>
+      <td align="left">O(log n) ~ height/depth of the tree.</td>
+    </tr>
+    <tr>
+      <td align="left">145 <a name="binary-tree-postorder-traversal"></td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-tree-postorder-traversal/" target="_blank">Iterative Postorder Traversal</a>
+      </td>
+      <td align="left">
+        <ul>
+        <li>
+        Push all the left children of root into the stack until there's no more nodes.
+        </li>
+        <li>
+        Then pop from the stack which is called current.
+        </li>
+        <li>
+        Kepp calling push_all_left() on current's right child until stack is empty.
+        </li>
+        <li>
+        Add current to result list.
+        </li></ul>
+        </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/iterative_postorder_traversal.py" target="_blank">
+          <code>iterative<br />postorder<br />traversal</code>
+        </a>
+      </td>
+      <td align="left">O(n), n number of nodes.</td>
+      <td align="left">O(n), n number of nodes.</td>
+    </tr>
+    <tr>
+      <td align="left">145.</td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-tree-postorder-traversal/" target="_blank">Recursive Postorder Traversal</a>
+      </td>
+      <td align="left">
+        <ul>
+        <li>
+        Keep visiting all the left nodes, then all the left of current.
+        </li>
+        <li>
+        Once finished, add the current node while visiting the right node.
+        </li>
+        </ul>
+        </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_postorder_traversal.py" target="_blank">
+          <code>recursive<br />postorder<br />traversal</code>
+        </a>
+      </td>
+      <td align="left">O(n), n number of nodes.</td>
+      <td align="left">O(log n) ~ height/depth of the tree.</td>
+    </tr>
+    <tr>
+      <td align="left">637. <a name="average-of-levels-in-binary-tree"></td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/average-of-levels-in-binary-tree/" target="_blank">Iterative Average of Levels in Binary Tree</a>
+      </td>
+      <td align="left">
+        <ul>
+        <li>Same as level order traversal, append the average value of each level nodes onto the list.
+        </li>
+        </ul>
+        </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/average_of_levels_order_traversal.py" target="_blank">
+          <code>average<br />of<br />levels<br />order<br />traversal</code>
+        </a>
+      </td>
+      <td align="left">O(n), n number of nodes.</td>
+      <td align="left">O(n), n number of nodes.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Medium <a name="binary-tree-medium"></a>
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">102. <a name="binary-tree-level-order-traversal"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" target="_blank">Level Order Traversal</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Traverse tree level by level.</li>
+          <li>Use a Queue/Deque to keep track of all the nodes of the next level before moving to the next level.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/level_order_traversal.py" target="_blank">
+          <code>level<br />order<br />traversal</code>
+        </a>
+      </td>
+      <td align="left">O(n).</td>
+      <td align="left">O(n)</td>
+    </tr>
+    <tr>
+      <td align="left">102.</a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" target="_blank">Recursive Level Order Traversal</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Traverse tree level by level.</li>
+          <li>Use a Deque to keep track of all the nodes of the next level before moving to the next level.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_level_order_traversal.py" target="_blank">
+          <code>recursive<br />level<br />order<br />traversal</code>
+        </a>
+      </td>
+      <td align="left">O(n).</td>
+      <td align="left">O(logn)</td>
+    </tr>
+    <tr>
+      <td align="left">103. <a name="binary-tree-zigzag-level-order-traversal"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/" target="_blank">Iterative Zigzag Level Order Traversal</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>After doing level order traversal using recursion, we simply reverse the direction at alternate levels</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/iterative_zigzag_level_order_traversal.py" target="_blank">
+          <code>iterative<br />zigzag<br />level<br />order<br />traversal</code>
+        </a>
+      </td>
+      <td align="left">O(n).</td>
+      <td align="left">O(n)</td>
+    </tr>
+    <tr>
+      <td align="left">103.</a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/" target="_blank">Recursive Zigzag Level Order Traversal</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>After doing level order traversal using recursion, we simply reverse the direction at alternate levels</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_zigzag_level_order_traversal.py" target="_blank">
+          <code>iterative<br />zigzag<br />level<br />order<br />traversal</code>
+        </a>
+      </td>
+      <td align="left">O(n).</td>
+      <td align="left">O(logn)</td>
+    </tr>
+    <tr>
+      <td align="left">116. <a name="populating-next-right-pointers-in-each-node"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/" target="_blank">Populating Next Right Pointers in Each Node</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Using BFS to populate next pointers of each node with nodes that occur to its immediate right on the same level.</li><li>Since for each node, we require the right node on the same level, we will perform a right-to-left BFS instead of the standard left-to-right BFS.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/populating_next_right_pointers_in_each_node.py" target="_blank">
+          <code>populating<br />next<br />right<br />pointers</code>
+        </a>
+      </td>
+      <td align="left">O(n).</td>
+      <td align="left">O(1) by using pointers</td>
     </tr>
   </tbody>
 </table>

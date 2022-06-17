@@ -1,14 +1,14 @@
 import pytest
 
 from solutions import (
-    IterativeBinaryTreeSolution,
+    IterativePostorderTraversal,
     TreeNode,
 )
 
 
 @pytest.fixture
 def solution():
-    return IterativeBinaryTreeSolution()
+    return IterativePostorderTraversal()
 
 
 @pytest.fixture
@@ -46,25 +46,25 @@ def tree_four():
     return build_binary_tree(0)
 
 
-def test_preorder_traversal_tree_one(solution, tree_one):
-    ref = [1, 2, 3]
-    assert ref == solution.preorder_traversal(tree_one)
+def test_postorder_traversal_tree_one(solution, tree_one):
+    ref = [3, 2, 1]
+    assert ref == solution.postorder_traversal(tree_one)
 
 
-def test_preorder_traversal_tree_two(solution, tree_two):
+def test_postorder_traversal_tree_two(solution, tree_two):
     ref = [None]
-    assert ref == solution.preorder_traversal(tree_two)
+    assert ref == solution.postorder_traversal(tree_two)
 
 
-def test_preorder_traversal_tree_three(solution, tree_three):
+def test_postorder_traversal_tree_three(solution, tree_three):
     ref = [1]
-    assert ref == solution.preorder_traversal(tree_three)
+    assert ref == solution.postorder_traversal(tree_three)
 
 
 def test_constraints(solution, tree_four):
     with pytest.raises(AssertionError):
         root = TreeNode(101)
-        solution.preorder_traversal(root)
+        solution.postorder_traversal(root)
 
     with pytest.raises(AssertionError):
-        solution.preorder_traversal(tree_four)
+        solution.postorder_traversal(tree_four)
