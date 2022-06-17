@@ -13,7 +13,6 @@ def solution():
 
 @pytest.fixture
 def tree_one():
-    # Driver program to test
     root = TreeNode(1)
     root.right = TreeNode(2)
 
