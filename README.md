@@ -479,7 +479,7 @@ Simple is better than complex.
       <td align="left">O(n)</td>
     </tr>
     <tr>
-      <td align="left">102.</a>
+      <td align="left">102.
       </td>
       <td align="left">
         <a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" target="_blank">Recursive Level Order Traversal</a>
@@ -518,7 +518,7 @@ Simple is better than complex.
       <td align="left">O(n)</td>
     </tr>
     <tr>
-      <td align="left">103.</a>
+      <td align="left">103.
       </td>
       <td align="left">
         <a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/" target="_blank">Recursive Zigzag Level Order Traversal</a>
