@@ -2,6 +2,18 @@ __author__ = """Mahmoud Harmouch"""
 __email__ = "eng.mahmoudharmouch@gmail.com"
 __version__ = "0.1.0"
 
+from solutions.binary_search.find_minimum_in_rotated_sorted_array import (
+    FindMinimumRotatedSortedArray,
+)
+from solutions.binary_search.find_minimum_in_rotated_sorted_array_two import (
+    FindMinimumRotatedSortedArrayTwo,
+)
+from solutions.binary_search.find_peak_element import (
+    FindPeakElementSolution,
+)
+from solutions.binary_search.smallest_letter_greater_than_target import (
+    SmallestLetterGreaterThanTarget,
+)
 from solutions.binary_tree.average_of_levels_order_traversal import (
     AverageOfLevelsOrderTraversalSolution,
 )

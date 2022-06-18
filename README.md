@@ -75,6 +75,14 @@ Simple is better than complex.
     * [Binary Tree Level Order Traversal](#binary-tree-level-order-traversal)
     * [Binary Tree Zigzag Level Order Traversal](#binary-tree-zigzag-level-order-traversal)
     * [Populating Next Right Pointers in Each Node](#populating-next-right-pointers-in-each-node)
+* [Binary Search](#binary-search)
+  * [Easy](#binary-search-easy)
+    * [Find Smallest Letter Greater Than Target](#find-smallest-letter-greater-than-target)
+  * [Medium](#binary-search-medium)
+    * [Find Minimum in Rotated Sorted Array](#find-minimum-in-rotated-sorted-array)
+    * [Find Peak Element](#find-peak-element)
+  * [Hard](#binary-search-hard)
+    * [Find Minimum in Rotated Sorted Array II](#find-minimum-in-rotated-sorted-array-ii)
 
 ## [Two Pointers](https://leetcode.com/tag/two-pointers/) <a name="two-pointers"></a>
 
@@ -105,7 +113,7 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/two_pointers/move_zeros.py" target="_blank">
-          <code>move <br />zeros <br />py </code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n). The right pointer does not visit the same element twice.</td>
@@ -125,7 +133,7 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/two_pointers/two_sum.py" target="_blank">
-          <code>two <br />sum <br />py </code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n logn). because of <a href="https://en.wikipedia.org/wiki/Timsort" target="_blank">Timsort</a>
@@ -161,7 +169,7 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/two_pointers/two_sum_two.py" target="_blank">
-          <code>two <br />sum <br />two <br />py </code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n). The right and left pointers do not visit the same element twice.</td>
@@ -202,7 +210,7 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/hash_table/two_sum.py" target="_blank">
-          <code>two <br />sum <br />py </code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n). One for loop, hashmap lookup ~ O(1)</td>
@@ -239,7 +247,7 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/hash_table/integer_to_roman.py" target="_blank">
-          <code>integer <br />to <br />roman <br />py </code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(k). k: length of the hash table.</td>
@@ -279,7 +287,7 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_preorder_traversal.py" target="_blank">
-          <code>recursive <br />preorder <br />traversal <br />py </code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n), n number of nodes.</td>
@@ -301,7 +309,7 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/iterative_preorder_traversal.py" target="_blank">
-          <code>iterative <br />preorder <br />traversal <br />py </code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n), n number of nodes.</td>
@@ -320,7 +328,7 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/morris_traversal.py" target="_blank">
-          <code>morris <br />traversal <br />py </code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n), n number of nodes.</td>
@@ -348,7 +356,7 @@ Simple is better than complex.
         </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/iterative_inorder_traversal.py" target="_blank">
-          <code>iterative<br />inorder<br />traversal</code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n), n number of nodes.</td>
@@ -367,7 +375,7 @@ Simple is better than complex.
         </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_inorder_traversal.py" target="_blank">
-          <code>recursive<br />inorder<br />traversal</code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n), n number of nodes.</td>
@@ -395,7 +403,7 @@ Simple is better than complex.
         </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/iterative_postorder_traversal.py" target="_blank">
-          <code>iterative<br />postorder<br />traversal</code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n), n number of nodes.</td>
@@ -418,7 +426,7 @@ Simple is better than complex.
         </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_postorder_traversal.py" target="_blank">
-          <code>recursive<br />postorder<br />traversal</code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n), n number of nodes.</td>
@@ -437,7 +445,7 @@ Simple is better than complex.
         </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/average_of_levels_order_traversal.py" target="_blank">
-          <code>average<br />of<br />levels<br />order<br />traversal</code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n), n number of nodes.</td>
@@ -472,7 +480,7 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/level_order_traversal.py" target="_blank">
-          <code>level<br />order<br />traversal</code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n).</td>
@@ -492,7 +500,7 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_level_order_traversal.py" target="_blank">
-          <code>recursive<br />level<br />order<br />traversal</code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n).</td>
@@ -511,7 +519,7 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/iterative_zigzag_level_order_traversal.py" target="_blank">
-          <code>iterative<br />zigzag<br />level<br />order<br />traversal</code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n).</td>
@@ -530,7 +538,7 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_zigzag_level_order_traversal.py" target="_blank">
-          <code>iterative<br />zigzag<br />level<br />order<br />traversal</code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n).</td>
@@ -549,11 +557,156 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/populating_next_right_pointers_in_each_node.py" target="_blank">
-          <code>populating<br />next<br />right<br />pointers</code>
+          <code>file</code>
         </a>
       </td>
       <td align="left">O(n).</td>
       <td align="left">O(1) by using pointers</td>
+    </tr>
+  </tbody>
+</table>
+
+
+## [Binary Search](https://leetcode.com/tag/binary-search/) <a name="binary-search"></a>
+
+#### 🔝 [Go To TOC](#TOC).
+
+### Easy <a name="binary-search-easy"></a>
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">744. <a name="find-smallest-letter-greater-than-target"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/find-smallest-letter-greater-than-target" target="_blank">Find Smallest Letter Greater Than Target</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Return letters[0] if letter at index 0 is larger than target.</li>
+          <li>Return letters[0] if letter at index -1 is lower or equal to target.</li>
+          <li>Perform a binary seach on the list for target.</li>
+          <li>The condition of the while loop is left <= right.</li>
+          <li>Check if mid element > target element, update right = mid_point - 1.</li>
+          <li>else: left = mid_point + 1.</li>
+          <li>Return letters[left]</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/smallest_letter_greater_than_target.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log n). n: length of the list.</td>
+      <td align="left">O(1). pointers.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Medium <a name="binary-search-medium"></a>
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">153. <a name="find-minimum-in-rotated-sorted-array"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/" target="_blank">Find Minimum in Rotated Sorted Array</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Check if the array is sorted but not rotated, return the first element.</li>
+          <li>Perform a binary seach on the list.</li>
+          <li>The condition of the while loop is left < right.</li>
+          <li>Check if mid element > right element, update left = mid_point + 1.</li>
+          <li>else: right = mid_point.</li>
+          <li>Return min(nums[left], nums[right]).</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/find_minimum_in_rotated_sorted_array.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log n). n: length of the list.</td>
+      <td align="left">O(1). pointers.</td>
+    </tr>
+    <tr>
+      <td align="left">162. <a name="find-peak-element"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/find-peak-element/" target="_blank">Find Peak Element</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Perform a binary seach on the list.</li>
+          <li>The condition of the while loop is left < right.</li>
+          <li>Check if mid element < mid element + 1, update left = mid_point + 1.</li>
+          <li>else: right = mid_point.</li>
+          <li>Return left.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/find_peak_element.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log n). n: length of the list.</td>
+      <td align="left">O(1). pointers.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Hard <a name="binary-search-hard"></a>
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">154. <a name="find-minimum-in-rotated-sorted-array-ii"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/" target="_blank">Find Minimum in Rotated Sorted Array II</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Same as Find Minimum in Rotated Sorted Array.</li>
+          <li>The only difference is that we can have duplicates.</li>
+          <li>Therefore we need to update left += 1, and right += 1, instead of mid.</li>
+          <li>Example, [5,5,0,5,5,5,5]</li>
+          <li>Return nums[left]</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/find_minimum_in_rotated_sorted_array_two.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log n). n: length of the list.</td>
+      <td align="left">O(1). pointers.</td>
     </tr>
   </tbody>
 </table>
