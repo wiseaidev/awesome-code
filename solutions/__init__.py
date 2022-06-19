@@ -66,6 +66,15 @@ from solutions.hash_table.integer_to_roman import (
 from solutions.hash_table.two_sum import (
     TwoSumHashTableSolution,
 )
+from solutions.string.group_anagrams import (
+    GroupAnagrams,
+)
+from solutions.string.longest_common_prefix import (
+    LongestCommonPrefix,
+)
+from solutions.string.reorder_data_in_log_files import (
+    ReorderDataLogFiles,
+)
 from solutions.two_pointers.move_zeros import (
     MoveZerosSolution,
 )

@@ -83,6 +83,12 @@ Simple is better than complex.
     * [Find Peak Element](#find-peak-element)
   * [Hard](#binary-search-hard)
     * [Find Minimum in Rotated Sorted Array II](#find-minimum-in-rotated-sorted-array-ii)
+* [String](#string)
+  * [Easy](#string-easy)
+    * [Longest Common Prefix](#longest-common-prefix)
+    * [Reorder Data in Log Files](#reorder-data-in-log-files)
+  * [Medium](#string-medium)
+    * [Group Anagrams](#group-anagrams)
 
 ## [Two Pointers](https://leetcode.com/tag/two-pointers/) <a name="two-pointers"></a>
 
@@ -710,6 +716,111 @@ Simple is better than complex.
     </tr>
   </tbody>
 </table>
+
+## [String](https://leetcode.com/tag/string/) <a name="string"></a>
+
+#### 🔝 [Go To TOC](#TOC).
+
+### Easy <a name="string-easy"></a>
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">14. <a name="longest-common-prefix"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/longest-common-prefix/" target="_blank">Longest Common Prefix</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Horizontal scanning.</li>
+          <li>Assign the first element of the list as the common prefix.</li>
+          <li>Iterate over the list.</li>
+          <li>Test if all characters match the second string.</li>
+          <li>If not, remove a letter from the end of the string(first element of the list.).</li>
+          <li>If matches, continue untill you find the common prefix amoung all strings.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/string/longest_common_prefix.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(n), n is the length of the array.</td>
+      <td align="left">O(1). constant length of the prefix.</td>
+    </tr>
+    <tr>
+      <td align="left">14. <a name="reorder-data-in-log-files"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/reorder-data-in-log-files/" target="_blank">Reorder Data in Log Files</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>We define a tuple of 3 keys, (key_1, key_2, key_3), as follows:</li>
+          <li>key_1: this key serves as a indicator for the type of logs. For the letter-logs, we could assign its key_1 with 0, and for the digit-logs, we assign its key_1 with 1.</li>
+          <li>key_2: for this key, we use the content of the letter-logs as its value.</li>
+          <li>key_3: similarly with the key_2, this key serves to further order the letter-logs.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/string/reorder_data_in_log_files.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(m n logn). because of <a href="https://en.wikipedia.org/wiki/Timsort" target="_blank">Timsort. m the for the comparison between two keys.</a></td>
+      <td align="left">O(m n) to keep the keys for the log.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Medium <a name="string-medium"></a>
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">154. <a name="group-anagrams"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/group-anagrams/" target="_blank">Group Anagrams</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Maintain a map result : {str: list[str]} where each key K is a sorted string, and each value is the list of strings from the initial input that when sorted, are equal to K.</li>
+          <li>Eample: strs_input = ["are", "bat", "ear", "code", "tab", "era"] <br> result = {'aer'): ['are', 'ear', 'era'], ...}</li>
+          <li>Itertate over the list of strings.</li>
+          <li>Converts each string into a sorted tuple.</li>
+          <li>Store the previous tuple as a key into the dict whos value the string itself.</li>
+          <li>Once finished, return the values of the dict.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/string/group_anagrams.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(N K log⁡ K), N is the length of strs, and K is the maximum length of a string in strs.</td>
+      <td align="left">O(N K), N strings, K is the maximum length of a string in strs.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ## Contributing
 
