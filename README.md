@@ -89,6 +89,12 @@ Simple is better than complex.
     * [Reorder Data in Log Files](#reorder-data-in-log-files)
   * [Medium](#string-medium)
     * [Group Anagrams](#group-anagrams)
+* [Linked List](#linked-list)
+  * [Easy](#linked-list-easy)
+    * [Reverse Linked List](#reverse-linked-list)
+  * [Medium](#linked-list-medium)
+    * [Add Two Numbers](#add-two-numbers)
+    * [Reorder List](#reorder-list)
 
 ## [Two Pointers](https://leetcode.com/tag/two-pointers/) <a name="two-pointers"></a>
 
@@ -821,6 +827,151 @@ Simple is better than complex.
   </tbody>
 </table>
 
+## [Linked List](https://leetcode.com/tag/linked-list/) <a name="linked-list"></a>
+
+#### 🔝 [Go To TOC](#TOC).
+
+### Easy <a name="linked-list-easy"></a>
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">206. <a name="reverse-linked-list"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank">Iterative Reverse Linked List</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Maintain three variables, current node, head, previous node.</li>
+          <li>Iterate the head through the list is done using the following instruction: head.next = head.</li>
+          <li>But, we need to store the head before moving to the next node using the variable current = head.</li>
+          <li>Move the current point to the previous node; this way, the list is being reversed.</li>
+          <li>Assign the presvious node to current node.</li>
+          <li>Keep iterating until head point to None.</li>
+          <li>Return previous node as the new head for our reversed LinkedList.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/linked_list/iterative_reverse_linked_list.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(n), n denotes the size of the linked list.</td>
+      <td align="left">O(1), Operations are made in-place.</td>
+    </tr>
+    <tr>
+      <td align="left">206.</a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank">Recursive Reverse Linked List</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Return the pointer of next node to its previous node and then make the previous node as the next node of returned node and then return the current node.</li>
+          <li>We first traverse till the last node and making the last node as the head node of reversed linked list and then applying the above procedure in the recursive manner.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/linked_list/recursive_reverse_linked_list.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(n), n denotes the size of the linked list.</td>
+      <td align="left">O(n), n denotes the size of the linked list.</td>
+    </tr>
+    <tr>
+      <td align="left">206.</a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank">Stack Iterative Reverse Linked List</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Traverse the list and push all of its nodes onto a stack.</li>
+          <li>Traverse the list from the head node again and pop a value from the stack top and connect them in reverse order.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/linked_list/stack_iterative_reverse_linked_list.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(n), n denotes the size of the linked list.</td>
+      <td align="left">O(n), n denotes the size of the linked list.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Medium <a name="linked-list-medium"></a>
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">2. <a name="add-two-numbers"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/add-two-numbers/" target="_blank">Add Two Numbers</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Initialize current node to dummy head of the returning list.</li>
+          <li>Initialize carry to 0.</li>
+          <li>Initialize dummy_head current_head.</li>
+          <li>Loop through lists l1 and l2 until you reach both ends.</li>
+          <li>Get the values from the linkedLists.</li>
+          <li>Move heads to the next node.</li>
+          <li>Check if carry > 0, if so append a new node with value carry to the returning list.</li>
+          <li>Return dummy head's next node because we initialized the dummy_head with a value 0.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/linked_list/add_two_numbers.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(max⁡(m,n)) where m and n represents the length of l1 and l2 respectively.</td>
+      <td align="left">O(max⁡(m,n)) The length of the new list is at most max⁡(m,n)+1.</td>
+    </tr>
+    <tr>
+      <td align="left">143. <a name="reorder-list"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/reorder-list" target="_blank">Reorder List</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Find the middle of or list - be careful, it needs to work properly both for even and for odd number of nodes. we can use slow/fast iterators trick, where slow moves with speed 1 and fast moves with speed 2</li>
+          <li>Reverse the second part of linked list. The idea is to keep three pointers: prev, curr, nextt stand for previous, current and next and change connections in place.</li>
+          <li>Finally, we need to merge two lists, given its heads. Interchange nodes: we put head2 as next element of head1 and then say that head1 is now head2 and head2 is previous head1.next.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/linked_list/recursive_reverse_linked_list.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(n), n denotes the size of the linked list.</td>
+      <td align="left">O(1).</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Contributing
 
