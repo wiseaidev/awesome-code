@@ -11,6 +11,24 @@ from solutions.binary_search.find_minimum_in_rotated_sorted_array_two import (
 from solutions.binary_search.find_peak_element import (
     FindPeakElementSolution,
 )
+from solutions.binary_search.iterative_binary_search import (
+    IterativeBinarySearch,
+)
+from solutions.binary_search.iterative_first_bad_version import (
+    IterativeFirstBadVersion,
+)
+from solutions.binary_search.iterative_search_insert_position import (
+    IterativeSearchInsertPosition,
+)
+from solutions.binary_search.recursive_binary_search import (
+    RecursiveBinarySearch,
+)
+from solutions.binary_search.recursive_first_bad_version import (
+    RecursiveFirstBadVersion,
+)
+from solutions.binary_search.recursive_search_insert_position import (
+    RecursiveSearchInsertPosition,
+)
 from solutions.binary_search.smallest_letter_greater_than_target import (
     SmallestLetterGreaterThanTarget,
 )
