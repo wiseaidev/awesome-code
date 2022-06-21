@@ -78,6 +78,9 @@ Simple is better than complex.
 * [Binary Search](#binary-search)
   * [Easy](#binary-search-easy)
     * [Find Smallest Letter Greater Than Target](#find-smallest-letter-greater-than-target)
+    * [Binary Search](#binary-search-problem)
+    * [First Bad Version](#first-bad-version)
+    * [Search Insert Position](#search-insert-position)
   * [Medium](#binary-search-medium)
     * [Find Minimum in Rotated Sorted Array](#find-minimum-in-rotated-sorted-array)
     * [Find Peak Element](#find-peak-element)
@@ -619,6 +622,149 @@ Simple is better than complex.
       </td>
       <td align="left">O(log n). n: length of the list.</td>
       <td align="left">O(1). pointers.</td>
+    </tr>
+    <tr>
+      <td align="left">704. <a name="binary-search-problem"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-search/" target="_blank">Iterative Binary Search</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Initialise two pointers: left = 0, right = length of the array - 1.</li>
+          <li>While left <= right:</li>
+          <li>Compare nums[mid] to target.</li>
+          <li>If the target = nums[mid]: return mid.</li>
+          <li>If target < nums[mid], continue the search on the left, right = mid - 1.</li>
+          <li>Else continue the search on the right, left = mid + 1.</li>
+          <li>If not found, return -1.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/iterative_binary_search.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log n). n: length of the list.</td>
+      <td align="left">O(1). pointers.</td>
+    </tr>
+    <tr>
+      <td align="left">704.</a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/binary-search/" target="_blank">Recursive Binary Search</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Pass the array, two pointers, and the target to a function for reursive calls: binary_search(nums, left, right, target)</li>
+          <li>Base case: if left > right: return - 1</li>
+          <li>If the target = nums[mid]: return mid.</li>
+          <li>If target < nums[mid], continue the search on the left, right = mid - 1: binary_search(nums,left , mid-1, target)</li>
+          <li>Else continue the search on the right, return binary_search(nums,mid + 1 , right, target)</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/recursive_binary_search.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log n). n: length of the list.</td>
+      <td align="left">O(log n). log n: The length of the binary tree.</td>
+    </tr>
+    <tr>
+      <td align="left">278. <a name="first-bad-version"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/first-bad-version/" target="_blank">Iterative First Bad Version</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Initialise two pointers: left = 1, right = n.</li>
+          <li>While left <= right:</li>
+          <li>check if isBadVersion(mid).</li>
+          <li>If not isBadVersion(mid): continue the search on the right, left = mid + 1.</li>
+          <li>Else continue the search on the left, right = mid - 1.</li>
+          <li>return left</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/iterative_first_bad_version.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log n). n: length of the list.</td>
+      <td align="left">O(1). pointers.</td>
+    </tr>
+    <tr>
+      <td align="left">278.</a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/first-bad-version/" target="_blank">Recursive First Bad Version</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Pass two pointers to a function for reursive calls: binary_search(left = 1, right = n)</li>
+          <li>Base case: if left > right: return - 1</li>
+          <li>if left == right: return left</li>
+          <li>If the target = nums[mid]: return mid.</li>
+          <li>if not isBadVersion(mid), continue the search on the right, return binary_search(mid + 1, right).</li>
+          <li>Else continue the search on the left, return binary_search(left, mid).</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/recursive_first_bad_version.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log n). n: length of the list.</td>
+      <td align="left">O(log n). log n: The length of the binary tree.</td>
+    </tr>
+    <tr>
+      <td align="left">35. <a name="search-insert-position"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/search-insert-position/" target="_blank">Iterative Search Insert Position</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Initialise two pointers, and a return value variable: left = 0, right = length of the array - 1, ret_val = 0.</li>
+          <li>Compare nums[mid] to target.</li>
+          <li>If the target = nums[mid]: return mid.</li>
+          <li>If target < nums[mid], continue the search on the left, right = mid - 1.</li>
+          <li>Else continue the search on the right, left = mid + 1, and set ret_val = left. </li>
+          <li>return ret_val.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/iterative_search_insert_position.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log n). n: length of the list.</td>
+      <td align="left">O(1). pointers.</td>
+    </tr>
+    <tr>
+      <td align="left">35.</a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/search-insert-position/" target="_blank">Recursive Search Insert Position</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>pass the array, two pointers, target, and a ret_val to a function for reursive calls: binary_search(nums, left, right, target, ret_val)</li>
+          <li>Base case: if left > right: return ret_val</li>
+          <li>If the target = nums[mid]: return mid.</li>
+          <li>If target < nums[mid], continue the search on the left, right = mid - 1: binary_search(nums,left , mid-1, target)</li>
+          <li>Else set ret_val = mid + 1, and continue the search on the right, return binary_search(nums,mid + 1 , right, target)</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/recursive_search_insert_position.py.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log n). n: length of the list.</td>
+      <td align="left">O(log n). log n: The length of the binary tree.</td>
     </tr>
   </tbody>
 </table>
