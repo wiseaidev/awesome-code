@@ -1,26 +1,26 @@
 <!-- MIT License
 
-Copyright (c) 2022, Harmouch101
+Copyright (c) 2022, wiseaidev
 All rights reserved.
  -->
 
 <div align="center">
-    <a href="https://circleci.com/gh/Harmouch101/awesome-code/tree/main">
-       <img src="https://circleci.com/gh/Harmouch101/awesome-code/tree/main.svg?style=svg"
+    <a href="https://circleci.com/gh/wiseaidev/awesome-code/tree/main">
+       <img src="https://circleci.com/gh/wiseaidev/awesome-code/tree/main.svg?style=svg"
        alt="CircleCI"/>
     </a>
-    <a href="https://results.pre-commit.ci/latest/github/Harmouch101/awesome-code/main">
-       <img src="https://results.pre-commit.ci/badge/github/Harmouch101/awesome-code/main.svg"
+    <a href="https://results.pre-commit.ci/latest/github/wiseaidev/awesome-code/main">
+       <img src="https://results.pre-commit.ci/badge/github/wiseaidev/awesome-code/main.svg"
        alt="pre-commit.ci status"/>
     </a>
-    <a href="https://github.com/Harmouch101/awesome-code">
+    <a href="https://github.com/wiseaidev/awesome-code">
        <img src="https://img.shields.io/badge/open_source-%F0%9F%A4%8D-3DA639.svg" alt="Open Source Love"/>
     </a>
-    <a href="https://github.com/Harmouch101/awesome-code/blob/master/LICENSE">
-       <img src="https://img.shields.io/github/license/Harmouch101/awesome-code" alt="License"/>
+    <a href="https://github.com/wiseaidev/awesome-code/blob/master/LICENSE">
+       <img src="https://img.shields.io/github/license/wiseaidev/awesome-code" alt="License"/>
     </a>
-    <a href="https://github.com/Harmouch101/awesome-code/">
-       <img src="https://img.shields.io/github/repo-size/Harmouch101/awesome-code" alt="Repo Size"/>
+    <a href="https://github.com/wiseaidev/awesome-code/">
+       <img src="https://img.shields.io/github/repo-size/wiseaidev/awesome-code" alt="Repo Size"/>
     </a>
 </div>
 
@@ -34,13 +34,13 @@ This repository contains solutions to Leetcode problems. It will be updated regu
 
 > Don't forget to slap that ⭐ button an odd number of times ;-)
 
-> Currently maintained by [`Mahmoud Harmouch`](https://github.com/Harmouch101).
+> Currently maintained by [`Mahmoud Harmouch`](https://github.com/wiseaidev).
 
 ---
 
 ## Prerequisites
 
-Basic understanding of the core language. If you are new to python, I highly recommend checking out the free learning material I compiled in the [`awesome-python`](https://github.com/Harmouch101/awesome-python) repository.
+Basic understanding of the core language. If you are new to python, I highly recommend checking out the free learning material I compiled in the [`awesome-python`](https://github.com/wiseaidev/awesome-python) repository.
 
 ```sh
 python -c "import this" | grep Simple
@@ -132,7 +132,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/two_pointers/move_zeros.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/two_pointers/move_zeros.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -152,7 +152,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/two_pointers/two_sum.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/two_pointers/two_sum.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -182,7 +182,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/two_pointers/squares_of_a_sorted_array.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/two_pointers/squares_of_a_sorted_array.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -218,7 +218,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/two_pointers/two_sum_two.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/two_pointers/two_sum_two.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -259,7 +259,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/hash_table/two_sum.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/hash_table/two_sum.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -296,7 +296,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/hash_table/integer_to_roman.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/hash_table/integer_to_roman.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -336,7 +336,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_preorder_traversal.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/recursive_preorder_traversal.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -358,7 +358,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/iterative_preorder_traversal.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/iterative_preorder_traversal.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -377,7 +377,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/morris_traversal.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/morris_traversal.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -405,7 +405,7 @@ Simple is better than complex.
         </li></ul>
         </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/iterative_inorder_traversal.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/iterative_inorder_traversal.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -424,7 +424,7 @@ Simple is better than complex.
         </li></ul>
         </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_inorder_traversal.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/recursive_inorder_traversal.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -452,7 +452,7 @@ Simple is better than complex.
         </li></ul>
         </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/iterative_postorder_traversal.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/iterative_postorder_traversal.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -475,7 +475,7 @@ Simple is better than complex.
         </ul>
         </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_postorder_traversal.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/recursive_postorder_traversal.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -494,7 +494,7 @@ Simple is better than complex.
         </ul>
         </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/average_of_levels_order_traversal.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/average_of_levels_order_traversal.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -529,7 +529,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/level_order_traversal.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/level_order_traversal.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -549,7 +549,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_level_order_traversal.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/recursive_level_order_traversal.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -568,7 +568,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/iterative_zigzag_level_order_traversal.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/iterative_zigzag_level_order_traversal.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -587,7 +587,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/recursive_zigzag_level_order_traversal.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/recursive_zigzag_level_order_traversal.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -606,7 +606,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_tree/populating_next_right_pointers_in_each_node.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_tree/populating_next_right_pointers_in_each_node.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -651,7 +651,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/smallest_letter_greater_than_target.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/smallest_letter_greater_than_target.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -676,7 +676,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/iterative_binary_search.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/iterative_binary_search.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -699,7 +699,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/recursive_binary_search.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/recursive_binary_search.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -723,7 +723,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/iterative_first_bad_version.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/iterative_first_bad_version.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -747,7 +747,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/recursive_first_bad_version.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/recursive_first_bad_version.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -771,7 +771,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/iterative_search_insert_position.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/iterative_search_insert_position.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -794,7 +794,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/recursive_search_insert_position.py.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/recursive_search_insert_position.py.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -833,7 +833,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/find_minimum_in_rotated_sorted_array.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/find_minimum_in_rotated_sorted_array.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -856,7 +856,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/find_peak_element.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/find_peak_element.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -894,7 +894,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/binary_search/find_minimum_in_rotated_sorted_array_two.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/find_minimum_in_rotated_sorted_array_two.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -937,7 +937,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/string/longest_common_prefix.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/string/longest_common_prefix.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -959,7 +959,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/string/reorder_data_in_log_files.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/string/reorder_data_in_log_files.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -998,7 +998,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/string/group_anagrams.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/string/group_anagrams.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -1042,7 +1042,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/linked_list/iterative_reverse_linked_list.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/linked_list/iterative_reverse_linked_list.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -1062,7 +1062,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/linked_list/recursive_reverse_linked_list.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/linked_list/recursive_reverse_linked_list.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -1082,7 +1082,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/linked_list/stack_iterative_reverse_linked_list.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/linked_list/stack_iterative_reverse_linked_list.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -1123,7 +1123,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/linked_list/add_two_numbers.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/linked_list/add_two_numbers.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -1144,7 +1144,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/linked_list/recursive_reverse_linked_list.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/linked_list/recursive_reverse_linked_list.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -1183,7 +1183,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/array/running_sum_of_1d_array.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/array/running_sum_of_1d_array.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -1205,7 +1205,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/array/find_pivot_index.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/array/find_pivot_index.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -1222,4 +1222,4 @@ You can open a pull request if you want!
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/Harmouch101/awesome-code/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/wiseaidev/awesome-code/blob/main/LICENSE).
