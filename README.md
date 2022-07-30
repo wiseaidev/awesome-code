@@ -58,6 +58,7 @@ Simple is better than complex.
   * [Easy](#two-pointers-easy)
     * [Move Zeros](#move-zeros)
     * [Two Sum](#two-sum)
+    * [Squares of a Sorted Array](#squares-of-a-sorted-array)
   * [Medium](#two-pointers-medium)
     * [Two Sum II](#two-sum-ii)
 * [Hash Table](#hash-table)
@@ -98,6 +99,10 @@ Simple is better than complex.
   * [Medium](#linked-list-medium)
     * [Add Two Numbers](#add-two-numbers)
     * [Reorder List](#reorder-list)
+* [Array](#array)
+  * [Easy](#array-easy)
+    * [Running Sum of 1d Array](#running-sum-of-1d-array)
+    * [Find Pivot Index](#find-pivot-index)
 
 ## [Two Pointers](https://leetcode.com/tag/two-pointers/) <a name="two-pointers"></a>
 
@@ -154,6 +159,36 @@ Simple is better than complex.
       <td align="left">O(n logn). because of <a href="https://en.wikipedia.org/wiki/Timsort" target="_blank">Timsort</a>
       </td>
       <td align="left">O(n). n is the length of the tmp List.</td>
+    </tr>
+    <tr>
+      <td align="left">977. <a name="squares-of-a-sorted-array"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/squares-of-a-sorted-array/" target="_blank">Squares of a Sorted Array</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>The array is already sorted.</li>
+          <li>Use two pointers, the left one at the start of the list, the right one at the end of the list.</li>
+          <li>Compare the abs of the left and right elements.</li>
+          <li>If abs_left is larger than abs_right, then:
+            results[right - left] = abs_left * abs_left
+            left += 1
+          </li>
+          <li>else:
+            results[right - left] = abs_right * abs_right
+            right -= 1
+          </li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/two_pointers/squares_of_a_sorted_array.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(n). A linear scan, n is the length of the results List
+      </td>
+      <td align="left">O(n). n is the length of the results List.</td>
     </tr>
   </tbody>
 </table>
@@ -1118,6 +1153,68 @@ Simple is better than complex.
     </tr>
   </tbody>
 </table>
+
+## [Array](https://leetcode.com/tag/array/) <a name="array"></a>
+
+#### 🔝 [Go To TOC](#TOC).
+
+### Easy <a name="array-easy"></a>
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">1480. <a name="running-sum-of-1d-array"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/running-sum-of-1d-array/" target="_blank">Running Sum of 1d Array</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Iterate over the list.</li>
+          <li>Add nums[i] to nums[i - 1] and assign the result to nums[i].</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/array/running_sum_of_1d_array.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(n), n is the length of the array.</td>
+      <td align="left">O(1). Operations are made in place.</td>
+    </tr>
+    <tr>
+      <td align="left">724. <a name="find-pivot-index"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/find-pivot-index/" target="_blank">Find Pivot Index</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Set the left and the right sums to 0 and sum(nums) respectively.</li>
+          <li>Subtract nums[i] from the right sum.</li>
+          <li>Test if left_sum == right_sum, then return.</li>
+          <li>else, add nums[i] to the left sum.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/Harmouch101/awesome-code/blob/main/solutions/array/find_pivot_index.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(n), n is the length of the array.</td>
+      <td align="left">O(1). Operations are made in place.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ## Contributing
 

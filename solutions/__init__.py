@@ -2,6 +2,12 @@ __author__ = """Mahmoud Harmouch"""
 __email__ = "eng.mahmoudharmouch@gmail.com"
 __version__ = "0.1.0"
 
+from solutions.array.find_pivot_index import (
+    FindPivotIndex,
+)
+from solutions.array.running_sum_of_1d_array import (
+    RunningSumOfArray,
+)
 from solutions.binary_search.find_minimum_in_rotated_sorted_array import (
     FindMinimumRotatedSortedArray,
 )
@@ -113,6 +119,9 @@ from solutions.string.reorder_data_in_log_files import (
 )
 from solutions.two_pointers.move_zeros import (
     MoveZerosSolution,
+)
+from solutions.two_pointers.squares_of_a_sorted_array import (
+    SquaresOfASortedArray,
 )
 from solutions.two_pointers.two_sum import (
     TwoSumSolution,
