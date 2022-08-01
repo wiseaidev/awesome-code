@@ -98,6 +98,7 @@ Simple is better than complex.
 * [Linked List](#linked-list)
   * [Easy](#linked-list-easy)
     * [Reverse Linked List](#reverse-linked-list)
+    * [Merge Two Sorted Lists](#merge-two-sorted-list)
   * [Medium](#linked-list-medium)
     * [Add Two Numbers](#add-two-numbers)
     * [Reorder List](#reorder-list)
@@ -1117,7 +1118,7 @@ Simple is better than complex.
       <td align="left">O(n), n denotes the size of the linked list.</td>
     </tr>
     <tr>
-      <td align="left">206.</a>
+      <td align="left">206.
       </td>
       <td align="left">
         <a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank">Stack Iterative Reverse Linked List</a>
@@ -1137,7 +1138,7 @@ Simple is better than complex.
       <td align="left">O(n), n denotes the size of the linked list.</td>
     </tr>
     <tr>
-      <td align="left">21.</a>
+      <td align="left">21. <a name="merge-two-sorted-list"></a>
       </td>
       <td align="left">
         <a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank">Iterative Merge Two Sorted Lists</a>
@@ -1154,7 +1155,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/linked_list/iterative_merge_two_sorted_list.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/linked_list/iterative_merge_two_sorted_lists.py" target="_blank">
           <code>file</code>
         </a>
       </td>
@@ -1162,7 +1163,7 @@ Simple is better than complex.
       <td align="left">O(n), n denotes the size of a linked list.</td>
     </tr>
     <tr>
-      <td align="left">21.</a>
+      <td align="left">21.
       </td>
       <td align="left">
         <a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank">Recursive Merge Two Sorted Lists</a>
@@ -1177,7 +1178,7 @@ Simple is better than complex.
         </ul>
       </td>
       <td align="left">
-        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/linked_list/recursive_merge_two_sorted_list.py" target="_blank">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/linked_list/recursive_merge_two_sorted_lists.py" target="_blank">
           <code>file</code>
         </a>
       </td>
