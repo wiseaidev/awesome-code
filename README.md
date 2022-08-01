@@ -91,6 +91,8 @@ Simple is better than complex.
   * [Easy](#string-easy)
     * [Longest Common Prefix](#longest-common-prefix)
     * [Reorder Data in Log Files](#reorder-data-in-log-files)
+    * [Isomorphic Strings](#isomorphic-strings)
+    * [Is Subsequence](#is-subsequence)
   * [Medium](#string-medium)
     * [Group Anagrams](#group-anagrams)
 * [Linked List](#linked-list)
@@ -966,6 +968,51 @@ Simple is better than complex.
       <td align="left">O(m n logn). because of <a href="https://en.wikipedia.org/wiki/Timsort" target="_blank">Timsort. m the for the comparison between two keys.</a></td>
       <td align="left">O(m n) to keep the keys for the log.</td>
     </tr>
+    <tr>
+      <td align="left">205. <a name="isomorphic-strings"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/isomorphic-strings/" target="_blank">Isomorphic Strings</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Simultaneously, loop over the two strings s and t.</li>
+          <li>Map each char in s to a char in t only if a new char of t not in values of dict/map. Example: <code>s = "badc", t = "baba", dict = {'b' : 'b', 'a': 'a', ...}</code></li>
+          <li>If the current char of s not in dict, and the current char of t in values of dict, return False.</li>
+          <li>If the current char of s in dict, and the value of key of s char is not equal to the current char of t, return False.</li>
+          <li>return True.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/string/isomorphic_strings.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(n), n: length of the input string.</td>
+      <td align="left">O(1), because the number of ASCII chars is constant, <code>man ascii</code></td>
+    </tr>
+    <tr>
+      <td align="left">205. <a name="isomorphic-strings"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/is-subsequence/" target="_blank">Is Subsequence</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Loop over all chars in t.</li>
+          <li>If the current char of t is equal to the char of s at index pointer, increase pointer.</li>
+          <li>If pointer is equal to the length of s, break.</li>
+          <li>Return True if pointer is equal to the length of s, False otherwise.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/string/is_subsequence.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(n).</td>
+      <td align="left">O(1).</td>
+    </tr>
   </tbody>
 </table>
 
@@ -1088,6 +1135,54 @@ Simple is better than complex.
       </td>
       <td align="left">O(n), n denotes the size of the linked list.</td>
       <td align="left">O(n), n denotes the size of the linked list.</td>
+    </tr>
+    <tr>
+      <td align="left">21.</a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank">Iterative Merge Two Sorted Lists</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Create two dummy nodes, <code>current = dummy = ListNode()</code></li>
+          <li>Simultaneously, Traverse both lists.</li>
+          <li>Compare the values of the current nodes from both lists.</li>
+          <li>Assign the next node of current to the node that has the minimum value.</li>
+          <li>Assign list to list.next.</li>
+          <li>Assign current to list</li>
+          <li>return <code>dummy.next</code></li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/linked_list/iterative_merge_two_sorted_list.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(n), n denotes the size of a linked list.</td>
+      <td align="left">O(n), n denotes the size of a linked list.</td>
+    </tr>
+    <tr>
+      <td align="left">21.</a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank">Recursive Merge Two Sorted Lists</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Base case: if one of the lists is empty, return either lists.</li>
+          <li>Compare the values of the current nodes from both lists.</li>
+          <li>Assign the next node of current to the node that has the minimum value.</li>
+          <li>Assign list.next to either <code>mergeTwoLists(list.next, list)</code> or <code>mergeTwoLists(list, list.next)</code>.</li>
+          <li>return either lists</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/linked_list/recursive_merge_two_sorted_list.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(n), n denotes the size of a linked list.</td>
+      <td align="left">O(n), n denotes the size of a linked list.</td>
     </tr>
   </tbody>
 </table>
