@@ -5,8 +5,14 @@ __version__ = "0.1.0"
 from solutions.array.find_pivot_index import (
     FindPivotIndex,
 )
+from solutions.array.kth_smallest_element_in_a_sorted_matrix import (
+    KthSmallestElementInASortedMatrix,
+)
 from solutions.array.running_sum_of_1d_array import (
     RunningSumOfArray,
+)
+from solutions.array.search_a_2d_matrix_ii import (
+    Searcha2DMatrixII,
 )
 from solutions.binary_search.find_minimum_in_rotated_sorted_array import (
     FindMinimumRotatedSortedArray,

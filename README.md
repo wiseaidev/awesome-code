@@ -106,6 +106,9 @@ Simple is better than complex.
   * [Easy](#array-easy)
     * [Running Sum of 1d Array](#running-sum-of-1d-array)
     * [Find Pivot Index](#find-pivot-index)
+  * [Medium](#array-medium)
+    * [Search a 2D Matrix II](#search-a-2d-matrix-ii)
+    * [Kth Smallest Element in a Sorted Matrix](#kth-smallest-element-in-a-sorted-matrix)
 
 ## [Two Pointers](https://leetcode.com/tag/two-pointers/) <a name="two-pointers"></a>
 
@@ -1311,6 +1314,64 @@ Simple is better than complex.
   </tbody>
 </table>
 
+### Medium <a name="array-mediun"></a>
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">240. <a name="search-a-2d-matrix-ii"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/search-a-2d-matrix-ii/" target="_blank">Search a 2D Matrix II</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Start iterating from bottom left corner with two pointers: <code>bottom, left = nb_rows-1, 0</code>.</li>
+          <li>If target is larger then current element, then go right by incrementing the left pointer by one.</li>
+          <li>If target is smaller then current element, then go up by decrementing the bottom pointer by one.</li>
+          <li>If target is equal to the current element, then return True.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/array/search_a_2d_matrix_ii.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(m+n), m, n are the number of columns and rows in the array.</td>
+      <td align="left">O(1). Operations are made in place.</td>
+    </tr>
+    <tr>
+      <td align="left">378. <a name="kth-smallest-element-in-a-sorted-matrix"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/" target="_blank">Kth Smallest Element in a Sorted Matrix</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Set two pointers: <code>left = matrix[0][0]</code> (top left), and <code>right = matrix[n-1][n-1]</code> bottom right.</li>
+          <li>Search for the mid of left and right, The mid is NOT necessarily an element in the matrix.</li>
+          <li>If <code>countLessOrEqual(mid) >= k</code>, we keep current <code>ans = mid</code> and try to find smaller value by searching in the left side. Otherwise, we search in the right side.</li>
+          <li>Since ans is the smallest value which <code>countLessOrEqual(ans) >= k</code>, so it's the <code>kth</code> smallest element in the matrix.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/array/kth_smallest_element_in_a_sorted_matrix.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(m+n), m, n are the number of columns and rows in the array.</td>
+      <td align="left">O(1). Operations are made in place.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Contributing
 
