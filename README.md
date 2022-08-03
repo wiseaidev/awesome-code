@@ -82,9 +82,11 @@ Simple is better than complex.
     * [Binary Search](#binary-search-problem)
     * [First Bad Version](#first-bad-version)
     * [Search Insert Position](#search-insert-position)
+    * [Sqrt(x)](#sqrtx)
   * [Medium](#binary-search-medium)
     * [Find Minimum in Rotated Sorted Array](#find-minimum-in-rotated-sorted-array)
     * [Find Peak Element](#find-peak-element)
+    * [My Calendar I](#my-calendar-i)
   * [Hard](#binary-search-hard)
     * [Find Minimum in Rotated Sorted Array II](#find-minimum-in-rotated-sorted-array-ii)
 * [String](#string)
@@ -807,6 +809,29 @@ Simple is better than complex.
       <td align="left">O(log n). n: length of the list.</td>
       <td align="left">O(log n). log n: The length of the binary tree.</td>
     </tr>
+    <tr>
+      <td align="left">69. <a name="sqrtx"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/sqrtx/" target="_blank">Sqrt(x)</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Use two pointers <code>left, right= 0, number</code>.</li>
+          <li>The condition of the while loop is <code>left <= right</code>.</li>
+          <li>Check if <code>mid * mid <= number < (mid + 1) * (mid + 1)</code>, return mid.</li>
+          <li>Check if <code>number < mid * mid </code>, set right to mid.</li>
+          <li>else, set left to mid.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/sqrt_x.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log n). n: given number.</td>
+      <td align="left">O(1). pointers.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -863,6 +888,33 @@ Simple is better than complex.
       </td>
       <td align="left">
         <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/find_peak_element.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log n). n: length of the list.</td>
+      <td align="left">O(1). pointers.</td>
+    </tr>
+    <tr>
+      <td align="left">729. <a name="my-calendar-i"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/my-calendar-i/" target="_blank">My Calendar I</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Check if it is possible to insert an interval when possible by performing a binary seach on the calendar.</li>
+          <li>The condition of the while loop is left < right.</li>
+          <li>Check if target <= nums[mid][0], update right = mid.</li>
+          <li>else: left = mid + 1.</li>
+          <li>Return left.</li>
+          <li>Check if index > 0 and self.calendar[index-1][1] > start, return False</li>
+          <li>Check if index < len(self.calendar) and end > self.calendar[index][0], return False</li>
+          <li>Insert into calender: self.calendar.insert(index, [start, end])</li>
+          <li>return True</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/my_calendar_i.py" target="_blank">
           <code>file</code>
         </a>
       </td>

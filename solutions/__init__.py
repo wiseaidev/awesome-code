@@ -32,6 +32,9 @@ from solutions.binary_search.iterative_first_bad_version import (
 from solutions.binary_search.iterative_search_insert_position import (
     IterativeSearchInsertPosition,
 )
+from solutions.binary_search.my_calendar_i import (
+    MyCalendar,
+)
 from solutions.binary_search.recursive_binary_search import (
     RecursiveBinarySearch,
 )
@@ -43,6 +46,9 @@ from solutions.binary_search.recursive_search_insert_position import (
 )
 from solutions.binary_search.smallest_letter_greater_than_target import (
     SmallestLetterGreaterThanTarget,
+)
+from solutions.binary_search.sqrt_x import (
+    MySqrt,
 )
 from solutions.binary_tree.average_of_levels_order_traversal import (
     AverageOfLevelsOrderTraversalSolution,
