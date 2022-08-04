@@ -30,3 +30,4 @@ repos:
     rev: 5.0.2
     hooks:
       - id: flake8
+        additional_dependencies: [flake8-isort]
