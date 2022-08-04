@@ -696,7 +696,7 @@ Simple is better than complex.
       <td align="left">O(1). pointers.</td>
     </tr>
     <tr>
-      <td align="left">704.</a>
+      <td align="left">704.
       </td>
       <td align="left">
         <a href="https://leetcode.com/problems/binary-search/" target="_blank">Recursive Binary Search</a>
@@ -743,7 +743,7 @@ Simple is better than complex.
       <td align="left">O(1). pointers.</td>
     </tr>
     <tr>
-      <td align="left">278.</a>
+      <td align="left">278.
       </td>
       <td align="left">
         <a href="https://leetcode.com/problems/first-bad-version/" target="_blank">Recursive First Bad Version</a>
@@ -791,7 +791,7 @@ Simple is better than complex.
       <td align="left">O(1). pointers.</td>
     </tr>
     <tr>
-      <td align="left">35.</a>
+      <td align="left">35.
       </td>
       <td align="left">
         <a href="https://leetcode.com/problems/search-insert-position/" target="_blank">Recursive Search Insert Position</a>
@@ -1117,7 +1117,7 @@ Simple is better than complex.
       <th align="center">Space Complexity</th>
     </tr>
     <tr>
-      <td align="left">154. <a name="group-anagrams"></a>
+      <td align="left">49. <a name="group-anagrams"></a>
       </td>
       <td align="left">
         <a href="https://leetcode.com/problems/group-anagrams/" target="_blank">Group Anagrams</a>
@@ -1185,7 +1185,7 @@ Simple is better than complex.
       <td align="left">O(1), Operations are made in-place.</td>
     </tr>
     <tr>
-      <td align="left">206.</a>
+      <td align="left">206.
       </td>
       <td align="left">
         <a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank">Recursive Reverse Linked List</a>
@@ -1476,7 +1476,7 @@ Simple is better than complex.
       <th align="center">Space Complexity</th>
     </tr>
     <tr>
-      <td align="left">154. <a name="mirror-reflection"></a>
+      <td align="left">858. <a name="mirror-reflection"></a>
       </td>
       <td align="left">
         <a href="https://leetcode.com/problems/mirror-reflection/" target="_blank">Mirror Reflection</a>
