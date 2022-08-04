@@ -89,6 +89,7 @@ Simple is better than complex.
     * [My Calendar I](#my-calendar-i)
   * [Hard](#binary-search-hard)
     * [Find Minimum in Rotated Sorted Array II](#find-minimum-in-rotated-sorted-array-ii)
+    * [Median of Two Sorted Arrays](#median-of-two-sorted-arrays)
 * [String](#string)
   * [Easy](#string-easy)
     * [Longest Common Prefix](#longest-common-prefix)
@@ -111,6 +112,9 @@ Simple is better than complex.
   * [Medium](#array-medium)
     * [Search a 2D Matrix II](#search-a-2d-matrix-ii)
     * [Kth Smallest Element in a Sorted Matrix](#kth-smallest-element-in-a-sorted-matrix)
+* [Math](#math)
+  * [Easy](#math-easy)
+    * [Mirror Reflection](#mirror-reflection)
 
 ## [Two Pointers](https://leetcode.com/tag/two-pointers/) <a name="two-pointers"></a>
 
@@ -959,6 +963,34 @@ Simple is better than complex.
       <td align="left">O(log n). n: length of the list.</td>
       <td align="left">O(1). pointers.</td>
     </tr>
+    <tr>
+      <td align="left">4. <a name="median-of-two-sorted-arrays"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/" target="_blank">Median of Two Sorted Arrays</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Initialize two pointers : left=0 and right=m (size of smaller array).</li>
+          <li>Iterate untill condition left<=right evaluates to be true.</li>
+          <li>Make a partition at the middle of the range and pick up the elements before the partition from first array.</li>
+          <li>Now take the remaining elements from the second array (say p1).</li>
+          <li>Find the values of border elements of the range of elements taken from both the arrays(leftmost and rightmost values).</li>
+          <li>Check if nums1_leftmost > nums2_rightmost: then decrease right pointer to p1-1</li>
+          <li>Check if nums2_leftmost > nums1_rightmost: then increase left = p1 + 1</li>
+          <li>Check if nums2_leftmost > nums1_rightmost: then increase left = p1 + 1</li>
+          <li>Else: Check if total number of elements in both the arrays is odd: then median = (max(nums1_leftmost, nums2_leftmost) + min(nums1_rightmost, nums2_rightmost)) / 2</li>
+          <li>Else: median = max(nums1_leftmost, nums2_leftmost)</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/binary_search/median_of_two_sorted_arrays.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(log(min(m,n))). m, n: length of both arrays.</td>
+      <td align="left">O(1). Operations are made in place.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -1424,6 +1456,52 @@ Simple is better than complex.
     </tr>
   </tbody>
 </table>
+
+
+## [Math](https://leetcode.com/tag/math/) <a name="math"></a>
+
+#### 🔝 [Go To TOC](#TOC).
+
+### Easy <a name="math-easy"></a>
+
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center">#</th>
+      <th align="center">Problem Statement</th>
+      <th align="center">Notes</th>
+      <th align="center">Solution</th>
+      <th align="center">Time Complexity</th>
+      <th align="center">Space Complexity</th>
+    </tr>
+    <tr>
+      <td align="left">154. <a name="mirror-reflection"></a>
+      </td>
+      <td align="left">
+        <a href="https://leetcode.com/problems/mirror-reflection/" target="_blank">Mirror Reflection</a>
+      </td>
+      <td align="left">
+        <ul>
+          <li>Keep dividing p,q by 2 until at least one becomes odd.</li>
+          <li>Check if p is odd: then return q % 2.</li>
+          <li>Else: return 2.</li>
+          <li>The idea is that for all odd p, the rays intersecting would alternate between 1 and 0.</li>
+          <li>If p is odd, for q (1...n) -> mirror reflected will be (1,0,1...0,1). This can easily be generalized as q % 2, since mirror reflected will be 1 when q is odd, and 0 when q is even.</li>
+          <li>if p is a power of 2, the mirror reflected will always be 2 except for when q == p, and then mirror reflected is 1.</li>
+        </ul>
+      </td>
+      <td align="left">
+        <a href="https://github.com/wiseaidev/awesome-code/blob/main/solutions/math/mirror_reflection.py" target="_blank">
+          <code>file</code>
+        </a>
+      </td>
+      <td align="left">O(1).</td>
+      <td align="left">O(1).</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ## Contributing
 
